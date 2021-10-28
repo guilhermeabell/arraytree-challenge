@@ -1,4 +1,4 @@
-// https://bitsofco.de/async-vs-defer/
+ // https://bitsofco.de/async-vs-defer  atributo async e defer
 
 
 // marcar todas as caixas de seleção e escutar
@@ -13,6 +13,7 @@ const checkboxElements = document.querySelectorAll("input[type='checkbox']");
 function traversalParents(target, checkOrUncheck) {
   let targetLevel = parseInt(target.getAttribute("level"));
   let curElement = target.parentElement;
+  console.log(target.parentElement)
 
   // selecione o elemento pai correto usando o atributo de nível
   for (let i = 0; i < targetLevel; i++) {
@@ -73,7 +74,7 @@ checkboxElements.forEach((element) => {
 
   element.addEventListener("mouseenter", ({ target }) => {
     let targetLevel = parseInt(target.getAttribute("level"));
-    target.parentElement.style.backgroundColor  = "#f9866d";
+    target.parentElement.style.backgroundColor  = "#B0C4DE";
     let curElement = target.parentElement;
 
     for (let i = 0; i < targetLevel; i++) {
