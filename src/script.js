@@ -58,6 +58,7 @@ function traversalChilds(target, checkOrUncheck) {
   }
 }
 
+// Para cada um dos elementos será adicionado um evento de click e um alvo(target)
 checkboxElements.forEach((element) => {
   element.addEventListener("click", ({ target }) => {
     if (target.checked) {
@@ -67,7 +68,7 @@ checkboxElements.forEach((element) => {
     } else {
       traversalParents(target, false);
       traversalChilds(target, false);
-    }
+    } 
   });
 
 
