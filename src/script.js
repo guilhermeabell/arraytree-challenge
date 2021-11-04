@@ -7,7 +7,6 @@
 // executa a função para percorrer os elementos filhos e adicionar o ícone de marca de seleção
 // e reverter quando desmarcar a caixa
 
-
 const checkboxElements = document.querySelectorAll("input[type='checkbox']");
 
 function traversalParents(target, checkOrUncheck) {
@@ -95,9 +94,7 @@ checkboxElements.forEach((element) => {
       }
     }
   });
-
-
-
+  
   element.addEventListener("mouseleave", ({ target }) => {
     let targetLevel = parseInt(target.getAttribute("level"));
     target.parentElement.style.backgroundColor  = "#ffff";
@@ -121,5 +118,9 @@ checkboxElements.forEach((element) => {
       }
     }
   });
+
+
+  //  ARMAZENAR DADOS E PERSISTIR
+
 });
 
