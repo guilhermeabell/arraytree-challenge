@@ -70,8 +70,6 @@ checkboxElements.forEach((element) => {
     } 
   });
 
-
-
   element.addEventListener("mouseenter", ({ target }) => {
     let targetLevel = parseInt(target.getAttribute("level"));
     target.parentElement.style.backgroundColor  = "#B0C4DE";
@@ -118,7 +116,6 @@ checkboxElements.forEach((element) => {
       }
     }
   });
-
 
   //  ARMAZENAR DADOS E PERSISTIR
 
