@@ -18,6 +18,7 @@ function traversalParents(target, checkOrUncheck) {
   for (let i = 0; i < targetLevel; i++) {
     curElement = curElement.parentElement;
   }
+
   // cur element !== null
   while (curElement) {
     curElement = curElement.previousElementSibling;
@@ -32,6 +33,7 @@ function traversalParents(target, checkOrUncheck) {
     }
   }
 }
+
 function traversalChilds(target, checkOrUncheck) {
   let targetLevel = parseInt(target.getAttribute("level"));
   let curElement = target.parentElement;
@@ -116,8 +118,6 @@ checkboxElements.forEach((element) => {
       }
     }
   });
-
-  //  ARMAZENAR DADOS E PERSISTIR
 
 });
 
