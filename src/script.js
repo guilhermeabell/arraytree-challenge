@@ -9,10 +9,15 @@
 
 const checkboxElements = document.querySelectorAll("input[type='checkbox']");
 
+// console.log(checkboxElements);
+
 function traversalParents(target, checkOrUncheck) {
   let targetLevel = parseInt(target.getAttribute("level"));
   let curElement = target.parentElement;
-  console.log(target.parentElement)
+  // console.log(target.parentElement)
+  // console.log(traversalParents);
+  console.log(targetLevel)
+
 
   // selecione o elemento pai correto usando o atributo de nível
   for (let i = 0; i < targetLevel; i++) {
